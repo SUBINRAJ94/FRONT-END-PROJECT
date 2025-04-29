@@ -1,0 +1,65 @@
+.navbar {
+    background-color: yellow;
+    width: 100%;
+  }
+
+  #login, #add_cart {
+    background-color: yellow;
+    border: none;
+  }
+
+  .fixed-size-button {
+    width: 110px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .scroll-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .scroll-btn {
+    position: absolute;
+    top: 15%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: #ffffff;
+    border: none;
+    font-size: 24px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .scroll-btn.left {
+    left: 0;
+  }
+
+  .scroll-btn.right {
+    right: 0;
+  }
+
+  .scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scroll-item {
+    display: inline-block;
+    min-width: 160px;
+    margin-right: 15px;
+    background-color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 700;
+  }
