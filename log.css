@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* LOGIN FORM STYLES */
+.login-form {
+  padding: 40px;
+  width: 300px;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* MOVING BACKGROUND */
+.moving-pic {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+/* This is the only moving image now */
+.moving-pic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: url('icon_img/LOGINpage.PNG') repeat-x;
+  background-size: cover;
+  animation: scroll-bg 10s linear infinite;
+}
+
+/* KEYFRAME FOR SCROLLING EFFECT */
+@keyframes scroll-bg {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.warning-message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: red;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+}
+
+#user-section {
+  display: flex;
+  align-items: center;
+}
+
+#login-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+#add_cart {
+  margin-left: 15px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.scroll-item {
+  margin-right: 15px;
+}
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-body {
+  padding: 10px;
+}

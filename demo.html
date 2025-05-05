@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>8 Boxes with Slideshows</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .box {
+      width: 12%; /* Adjust as needed */
+      margin: 5px;
+      border: 2px solid #ccc;
+      padding: 5px;
+      background-color: #f8f9fa;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .carousel {
+      height: 100px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: none; /* hide arrows */
+    }
+  </style>
+</head>
+<body>
+
+<div class="d-flex flex-nowrap justify-content-center">
+  <!-- Repeat this for 8 boxes -->
+  <div class="box">
+    <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://via.placeholder.com/100x100?text=1-1" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/100x100?text=1-2" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/100x100?text=1-3" class="d-block w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- You can copy-paste this block and change carousel ID and image URLs -->
+  <div class="box">
+    <div id="carousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://via.placeholder.com/100x100?text=2-1" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/100x100?text=2-2" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/100x100?text=2-3" class="d-block w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Repeat for boxes 3 to 8 with different carousel IDs and images -->
+  <!-- Make sure each carousel has a unique ID (carousel3, carousel4, etc.) -->
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

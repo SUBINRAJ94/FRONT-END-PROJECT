@@ -21,76 +21,38 @@
   </style>
 </head>
 <body>
-    <div>
-        <div class="navbar">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div>
-             <button class="navbar"><a href="#index.html"> 
-                <img src="icon_img/noon-logo.png" alt="noon_icon" width="85px" height=""></a>
-             </button>
-            </div>
-            <form id="search" class="d-flex">
-                <input type="search" class="form-control me-1 w-50" id="search" placeholder="What are you looking for?" aria-label="search">
-                <button class="search me-2" type="submit">search </button> 
-            </form> |
-                <button class="fixed-size-button" id="login" type="login">Log in <img src="icon_img/login.png" alt="" width="30px" height=""></button>|
-                <button id="add_cart"><a href="add cart.html"><img src="icon_img/cart icon.png" alt="add_cart" width="25px"></a></button>
-        </nav>
-    </div></div>
-
-<div class="container py-5">
-  <h1 class="mb-4">Products</h1>
-
-  <div class="row">
-    <!-- Product Item -->
-    <div class="col-md-4">
-      <div class="product-card">
-        <h5>Product A</h5>
-        <p>$10.00</p>
-        <input type="number" class="form-control mb-2" min="1" value="1" id="qty1">
-        <button class="btn btn-primary w-100" onclick="addToCart('Product A', 10, 'qty1')">Add to Cart</button>
+     <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">
+        <img src="icon_img/noon-logo.png" alt="noon_icon" width="85">
+      </a>
+      <!-- Toggler (hamburger icon) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar content -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <form class="d-flex mx-auto my-2 my-lg-0 flex-grow-1" role="search">
+          <input type="search" class="form-control me-2" placeholder="What are you looking for?" aria-label="Search">
+          <button class="btn btn-dark me-2" type="submit">Search</button>
+        </form>
+  
+        <div class="d-flex align-items-center">
+          <button class="btn fixed-size-button me-2" id="login" type="button"><a href="log.html">
+            Log in <img src="icon_img/login.png" alt="" width="30"></a>
+          </button>
+  
+          <a href="cart.html" class="btn" id="add_cart">
+            <img src="icon_img/cart icon.png" alt="add_cart" width="25">
+          </a>
+        </div>
       </div>
     </div>
-
-    <div class="col-md-4">
-      <div class="product-card">
-        <h5>Product B</h5>
-        <p>$15.00</p>
-        <input type="number" class="form-control mb-2" min="1" value="1" id="qty2">
-        <button class="btn btn-primary w-100" onclick="addToCart('Product B', 15, 'qty2')">Add to Cart</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Cart Summary -->
-  <div class="cart-summary mt-5">
-    <h4>Cart</h4>
-    <ul id="cart-items" class="list-group mb-3"></ul>
-    <h5>Total: $<span id="total">0.00</span></h5>
-  </div>
-</div>
-
-<script>
-  let total = 0;
-  const cartItems = document.getElementById("cart-items");
-  const totalDisplay = document.getElementById("total");
-
-  function addToCart(productName, price, qtyId) {
-    const qty = parseInt(document.getElementById(qtyId).value);
-    const itemTotal = price * qty;
-    total += itemTotal;
-
-    const li = document.createElement("li");
-    li.className = "list-group-item d-flex justify-content-between";
-    li.textContent = `${productName} x${qty}`;
-    const span = document.createElement("span");
-    span.textContent = `$${itemTotal.toFixed(2)}`;
-    li.appendChild(span);
-
-    cartItems.appendChild(li);
-    totalDisplay.textContent = total.toFixed(2);
-  }
-</script>
+  </nav>
 
 </body>
 </html>

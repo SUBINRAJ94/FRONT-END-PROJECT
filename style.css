@@ -6,6 +6,7 @@
   #login, #add_cart {
     background-color: yellow;
     border: none;
+    text-decoration: none;
   }
 
   .fixed-size-button {
@@ -45,7 +46,7 @@
     overflow-x: auto;
     white-space: nowrap;
     scroll-behavior: smooth;
-    padding: 10px 0;
+    padding: 8px 0;
     width: 100%;
   }
 
@@ -55,11 +56,137 @@
 
   .scroll-item {
     display: inline-block;
-    min-width: 160px;
-    margin-right: 15px;
+    min-width: 100px;
+    margin-right: 5px;
     background-color: #ffffff;
     padding: 5px;
     text-align: center;
     border-radius: 5px;
     font-weight: 700;
   }
+#login a{
+  text-decoration: none;
+}
+.box {
+  width: 12%; /* Adjust as needed */
+  margin: 5px;
+  border: none;
+  padding: 5px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.carousel {
+  height: 100px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none; /* hide arrows */
+}
+.box{
+  float: left;
+}
+.phone{
+  text-align: center;
+}
+.link-btn{
+  background-color: rgb(255, 255, 255);
+  color: rgb(39, 41, 48);
+  padding: 10px 40px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.custom-card {
+  border: 0.5px solid rgb(231, 226, 226);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 80%; 
+  height: 100%; 
+  font-family: sans-serif;
+}
+
+.custom-card:hover {
+  transform: scale(1.01);
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+.wishlist-icon img {
+  width: 25px;     
+  height: 25px;
+}
+
+.product-image {
+  width: 80%;                       
+  object-fit: contain;         
+}
+
+.card-body {
+  padding: 0px;
+}
+
+.card-title {
+  color: #555454;
+}
+
+.card-type {
+  color: #555454;
+}
+
+.price-section {
+  color: #444;
+}
+
+.current-price {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.original-price {
+  color: #888;
+  text-decoration: line-through;
+}
+
+.cart-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cart-icon:hover {
+  transform: scale(1.2);
+}
+
+.buy-now-btn {
+  background-color: #2f467c;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 5px;
+}
+.cart-btn{
+  background: #ffffff;
+  border:0.5px solid #2f467c;
+  color: #2f467c;
+  font-weight: bold;
+  padding: 5px 5px;
+  transition: background 0.3s;
+}
