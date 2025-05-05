@@ -72,6 +72,9 @@
   margin: 5px;
   border: none;
   padding: 5px;
+  margin-bottom: 20px;
+  flex: 0 0 auto;
+  text-align: center;
 }
 
 .carousel-inner img {
@@ -88,11 +91,9 @@
 .carousel-control-next {
   display: none; /* hide arrows */
 }
-.box{
-  float: left;
-}
 .phone{
   text-align: center;
+  margin-top: 150px;
 }
 .link-btn{
   background-color: rgb(255, 255, 255);
@@ -189,4 +190,15 @@
   font-weight: bold;
   padding: 5px 5px;
   transition: background 0.3s;
+}
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-item img {
+  width: 100%;
+  margin: 0 10px;
+  object-fit: cover;
+  height: 225px;
 }

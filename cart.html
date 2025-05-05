@@ -54,5 +54,26 @@
     </div>
   </nav>
 
+  <script>
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartItemsContainer = document.getElementById('cartItems');
+
+    if (cart.length === 0) {
+      cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+    } else {
+      cart.forEach(item => {
+        cartItemsContainer.innerHTML += `
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="${item.image}" class="card-img-top" alt="${item.name}">
+              <div class="card-body">
+                <h5 class="card-title">${item.name}</h5>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+    }
+  </script>
 </body>
 </html>
