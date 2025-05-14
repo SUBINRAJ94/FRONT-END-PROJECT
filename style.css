@@ -1,3 +1,6 @@
+body{
+  background-color: #FEF1F1;
+}
 .navbar {
     background-color: yellow;
     width: 100%;
@@ -201,4 +204,10 @@
   margin: 0 10px;
   object-fit: cover;
   height: 225px;
+}
+#end button a{
+  text-decoration: none;
+}
+.Best{
+  background-color:#F4F0F0;
 }
